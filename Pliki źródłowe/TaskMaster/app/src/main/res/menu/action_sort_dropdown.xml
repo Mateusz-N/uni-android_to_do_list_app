@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/byName_desc"
+            android:title="@string/wg_nazwy_malej_co"
+            android:orderInCategory="1"
+            app:showAsAction="always" />
+
+        <item android:id="@+id/byName_asc"
+            android:title="@string/wg_nazwy_rosn_co"
+            android:orderInCategory="2"
+            app:showAsAction="always" />
+
+        <item
+            android:id="@+id/byPriority_desc"
+            android:title="@string/wg_priorytetu_malej_co"
+            android:orderInCategory="3"
+            app:showAsAction="always"/>
+
+        <item
+            android:id="@+id/byPriority_asc"
+            android:title="@string/wg_priorytetu_rosn_co"
+            android:orderInCategory="3"
+            app:showAsAction="always"/>
+
+        <item
+            android:id="@+id/byStatusNotDoneFirst"
+            android:title="@string/wg_statusu_najpierw_niewykonane"
+            android:orderInCategory="3"
+            app:showAsAction="always"/>
+
+        <item
+            android:id="@+id/byStatusDoneFirst"
+            android:title="@string/wg_statusu_najpierw_wykonane"
+            android:orderInCategory="3"
+            app:showAsAction="always"/>
+    </group>
+</menu>

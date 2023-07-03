@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_firstLaunch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/textView_listIsEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/acme"
+            android:text="@string/nic_tutaj_jeszcze_nie_ma"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <Space
+            android:id="@+id/space_textviewListIsEmpty_fabAddFirstTask"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton_addTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:contentDescription="@string/naci_nij_by_doda_pierwsze_zadanie"
+            android:focusable="true"
+            app:backgroundTint="@color/purple_500"
+            app:fabCustomSize="100dp"
+            app:maxImageSize="50dp"
+            app:srcCompat="@android:drawable/ic_input_add"
+            app:tint="@color/white" />
+
+        <Space
+            android:id="@+id/space_fabAddFirstTask_textviewAddFirstTask"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/textView_addFirstTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/acme"
+            android:text="@string/dodaj_pierwsze_zadanie"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/purple_500"
+            android:textStyle="bold"
+            android:theme="@style/Theme.ToDoList" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.taskmaster.MainActivity">
+
+    <item
+        android:id="@+id/action_upload"
+        android:icon="@android:drawable/stat_sys_upload"
+        android:orderInCategory="100"
+        android:title="@string/pobierz_zadania_do_pliku"
+        app:showAsAction="ifRoom">
+    </item>
+    <item
+        android:id="@+id/action_download"
+        android:icon="@android:drawable/stat_sys_download"
+        android:orderInCategory="120"
+        android:title="@string/prze_lij_zadania_z_pliku"
+        app:showAsAction="always">
+    </item>
+    <item
+        android:id="@+id/action_sort"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:orderInCategory="140"
+        android:title="@string/sortuj_zadania"
+        app:showAsAction="always"></item>
+</menu>
